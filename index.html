@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include jumbo.html %}
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    {% assign pages = site.posts | sort: "index" %}
+    {% for each in pages %}
+      <div class="col-md-4">
+        <h2> {{forloop.index}}. {{each.title}} </h2>
+        <p> {{each.meta}} </p>
+        <p><a class="btn btn-success" href="{{each.file}}" role="button">View details </a></p>
+      </div> 
+    {% endfor %}
+  </div>
+    {% include footer.html %}
+</div> <!-- /container -->

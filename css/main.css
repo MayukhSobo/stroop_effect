@@ -1,0 +1,36 @@
+.display-3 {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 48px;
+}
+#red {
+	color: red;
+}
+#green {
+	color: green;
+}
+#blue {
+	color: blue;
+}
+#orange {
+	color: orange;
+}
+
+p {
+	font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar-brand {
+	font-family: 'Arbutus Slab', serif;
+}
+
+.col-md-4 h2 {
+	font-family: 'Arbutus Slab', serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.btn {
+	font-family: 'Nixie One', cursive;
+}
