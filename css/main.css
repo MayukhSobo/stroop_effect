@@ -34,3 +34,72 @@ p {
 .btn {
 	font-family: 'Nixie One', cursive;
 }
+
+.col {
+	margin-top: 3rem;
+}
+.col-md-4 {
+	margin-top: 1rem;
+}
+
+.col h1 {
+	font-family: 'Arbutus Slab', serif;
+	font-weight: bold;
+	font-size: 50px;
+	color: blue;
+	text-align: center;
+}
+
+.col h2 {
+	font-family: 'Nixie One', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.legend {
+	font-family: 'EB Garamond', serif;
+	margin-top: 1px;
+	text-align: center;
+	font-size:	15px;
+}
+
+.col-md-4 h1 {
+	font-family: 'Arbutus Slab', serif;
+	font-weight: bold;
+	font-size: 50px;
+	color: blue;
+	text-align: center;
+}
+
+.col-lg-4 h2 {
+	font-family: 'Nixie One', cursive;
+	font-size: 50px;
+}
+
+.col-6 h2 {
+	font-family: 'Nixie One', cursive;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.congruent {
+	font-family: 'Neuton';
+	font-size: 35px;
+	margin-left: 80px;
+	margin-bottom: -20px;
+	color: orange;
+	animation-delay: 1s;
+}
+.incongruent {
+	font-family: 'Neuton';
+	font-size: 35px;
+	margin-left: 80px;
+	margin-top: -20px;
+	color: green;
+	animation-delay: 1.2s;
+}
+.zoomIn p {
+	font-family: 'EB Garamond', serif;
+	text-align: justify;
+}
