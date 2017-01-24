@@ -89,7 +89,7 @@ p {
 	margin-left: 80px;
 	margin-bottom: -20px;
 	color: orange;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 }
 .incongruent {
 	font-family: 'Neuton';
@@ -97,7 +97,7 @@ p {
 	margin-left: 80px;
 	margin-top: -20px;
 	color: green;
-	animation-delay: 1.2s;
+	animation-delay: 1s;
 }
 .zoomIn p {
 	font-family: 'EB Garamond', serif;
