@@ -18,7 +18,7 @@
 p {
 	font-family: 'EB Garamond', serif;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .navbar-brand {
@@ -32,7 +32,9 @@ p {
 }
 
 .btn {
-	font-family: 'Nixie One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .col {
