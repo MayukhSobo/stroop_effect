@@ -59,6 +59,16 @@ p {
 	text-align: center;
 }
 
+.col p {
+	font-family: 'Neuton';
+	font-size: 20px;
+	font-weight: 550;
+}
+
+em {
+	font-weight: bold;
+}
+
 .legend {
 	font-family: 'EB Garamond', serif;
 	margin-top: 1px;
