@@ -22,14 +22,29 @@ layout: default
 					</p>
 				</div>
 			</div>
-	</div>
-    <!---########## Graph 1 ############### -->
-	<div class="row">
-		<div class="col">
-            {% include bar_of_scores.html %}
-			<div id="bar_score"></div>
 		</div>
-	</div>
+    <!---########## Graph 1 ############### -->
+		<div class="row">
+			<div class="col">
+	      {% include bar_of_scores.html %}
+				<div id="bar_score"></div>
+			</div>
+		</div>
+		<!---########## About Graph 2 ############### -->
+    <div class="row">
+			<div class="col">
+				<div class="wow zoomIn">
+					<p> Documentation for the second graph </p>
+				</div>
+			</div>
+		</div>
+    <!---########## Graph 2 ############### -->
+		<div class="row">
+			<div class="col">
+    	  {% include pi_chart.html %}
+				<div id="pi_chart"></div>
+			</div>
+		</div>
 </div>
 
 
