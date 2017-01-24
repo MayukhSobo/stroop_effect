@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 markdown: kramdown
 baseurl: /stroop-effect
-=======
-markdown: redcarpet
-baseurl: /stroop-effect
-theme: jekyll-theme-dinky
->>>>>>> f46320f74859efaed2485d19772f12c582660da8
+
