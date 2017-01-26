@@ -1,0 +1,106 @@
+<script>
+    $(function () {
+        $('#sctr').highcharts({
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+
+            title: {
+                text: 'Scores of Congruent vs Incongruent'
+            },
+
+            subtitle: {
+                text: 'Source: stroopdata.csv'
+            },
+
+            xAxis: {
+                title: {
+                    enabled: true,
+                    text: 'Score (sec)'
+                },
+                startOnTick: true,
+                endOnTick: true,
+                showLastLabel: true
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Score (sec)'
+                }
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 100,
+                y: 50,
+                floating: true,
+                backgroundColor: '#FFFFFF',
+                borderWidth: 1
+            },
+
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 5,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: true
+                            }
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{series.name}</b><br>',
+                        pointFormat: '{point.x} sec, {point.y} sec'
+                    }
+                }
+            },
+            credits: {
+                        enabled:false
+                    },
+            series: [{
+                regression: true ,
+                regressionSettings: {
+                    type: 'linear',
+                    color:  'rgba(255, 0, 0, 1)'
+                },
+                name: 'Congruent vs Inongruent',
+                color: 'rgba(223, 83, 83, .5)',
+                data: [[12.079,19.278],
+                       [16.791,18.741],
+                       [9.564,21.214],
+                       [8.630,15.687],
+                       [14.669,22.803],
+                       [12.238,20.878],
+                       [14.692,24.572],
+                       [8.987,17.394],
+                       [9.401,20.762],
+                       [14.480,26.282],
+                       [22.328,24.524],
+                       [15.298,18.644],
+                       [15.073,17.510],
+                       [16.929,20.330],
+                       [18.200,35.255],
+                       [12.130,22.158],
+                       [18.495,25.139],
+                       [10.639,20.429],
+                       [11.344,17.425],
+                       [12.369,34.288],
+                       [12.944,23.894],
+                       [14.233,17.960],
+                       [19.710,22.058],
+                       [16.004,21.157]]    
+            }]
+        });
+    });
+</script>

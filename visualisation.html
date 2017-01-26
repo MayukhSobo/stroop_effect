@@ -60,6 +60,40 @@ layout: default
 			</div>
 		</div>
 	</div>
+    <!---########## Graph 4 ############### -->
+    <div class="row">
+        <div class="col">
+            {% include correlation.html %}
+            <div id="sctr"></div>
+        </div>
+    </div>
+    <!---########## About Graph 4 ############### -->
+    <div class="row">
+        <div class="col">
+            <div class="wow zoomIn">
+                <h2> Can we predict the incongruent score with someonne's congruent score ?? </h2>
+                <p> This is very important. We have already agreed that words and their colours that 
+                are given is independent and the time taken is dependent variable.
+                Now we know that congruent scores are not dependent on the word and the color, hence
+                the time taken by the congruent scoers can be somehow considered as independent and
+                time for incongreunt is dependent. Moreover the person who takes more time with congruent words, should obviously take even more time with incongruent one. Hence it is logical to find the linear correlation between congruent and incongruent socres. Now if we know someone's congruent score or in 
+                other word time taken to simply read some words correctly, we can predict how much 
+                time that person would take to read some incongruent words correctly. In other words 
+                we can predict his effect of <em> semantic interference - a major cause of Stroop Effect</em>
+                <br><br>
+                The above scatter graph can tell a lot of things. Firstly, it automatically calulates and plot the regression line with the scatter plot and we can see the equation of the regression line in legend. Looking at the regression line, we can see that most of the points are nearby the regression line which proves the fact that the correlation between the congruent and the incongruent score is pretty strong. This also means that the equation of the regression line can be used to predict any incongruent score <em> y value </em> if we pass in the congruent score <em> x value </em>
+                <br><br>
+                We can also see 2 outliers which are far off from the regression axis. This simply means that they are spoilers to our prediction model because the equation of the line does't really predict them.
+
+                <span id="green"> <em>Overall there is a good pattern in this and hence if we find the r-squared value of this, we may end up with a good percentage.</em></span>
+
+                <br><br>
+                <em> As usual you can zoom into the scatter plot by selecting and dragging a section. Needless to say that this works better in touch interfaces with pinch out/in. </em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
 </div>
 
 
