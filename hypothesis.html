@@ -7,37 +7,36 @@ layout: default
 		<div class="col">
 			<h1> Hypothesis!! </h1>
 			<h3><div class="wow zoomIn legend">
-				`mu_a = tt"Mean for Alternative Hypothesis"`<br>
-				`mu_o = tt"Mean for NULL Hypothesis"`<br>
+				`H_a = tt"Alternative Hypothesis"`<br>
+				`H_o = tt"NULL Hypothesis"`<br>
 				`mu_i = tt"Mean for incongruent scores"`<br>
 				`mu_c = tt"Mean for congruent scores"`<br>
 			</div></h3>
-			<br><br>
 			<p>
-				<h3><span id="red" class="wow zoomIn delay"> NULL Hypothesis</span></h3>
+				<h3><span id="green" class="wow zoomIn delay"> NULL Hypothesis</span></h3>
 				<div class="tab wow bounceInRight">
-					`mu_o -> mu_i - mu_c = 0 -> tt"There is no"` 
+					`H_o: mu_i - mu_c = 0 -> tt"There is no"` 
 					`tt"difference between"` 
 					`tt"both the means"`
 				</div>
 			</p>
 			<p>
-				<h3><span id="red" class="wow zoomIn delay"> ALTERNATIVE Hypothesis </span></h3>
+				<h3><span id="green" class="wow zoomIn delay"> ALTERNATIVE Hypothesis </span></h3>
 				<div class="tab wow bounceInRight">
-					`mu_a -> mu_i - mu_c ne 0 ->` 
+					`H_a: mu_i - mu_c ne 0 ->` 
 					`tt"There is significant"`
 					`tt"difference between"` 
 					`tt"both the means for"`
 					`tt"2 tailed t-test"`
 					<br><br>
-					`mu_a -> mu_i - mu_c lt 0 ->` 
+					`H_a: mu_i - mu_c lt 0 ->` 
 					`tt"Incongruent score"`
 					`tt"mean is lesser"` 
 					`tt"than the congruent"`
 					`tt"mean in 1"`
 					`tt"tailed t-test"`
 					<br>
-					`mu_a -> mu_i - mu_c gt 0 ->` 
+					`H_a: mu_i - mu_c gt 0 ->` 
 					`tt"Incongruent score"`
 					`tt"mean is greater"` 
 					`tt"than the congruent"`
@@ -46,13 +45,33 @@ layout: default
 				</div>
 			</p>
 			<p>
-				<h3><span id="red" class="tab-up wow zoomIn delay">
+				<h3><span id="green" class="tab-up wow zoomIn delay">
 					`t` Statictics at `alpha` value of 0.05
 				</span></h3>
 				<div class="tab wow bounceInRight">
 					`t_(alpha = 0.05) = tt"12.4"`
 				</div>
 			</p>
+			<!--#####################-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					t-statistics value for the sample
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`t_(stat) = ((mu_i - mu_c) - x_D) / (SE) = tt"1.2"`
+				</div>
+			</p>
+			<br><br>
+			<!--#####################-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Total degress of freedom
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`df = (n_1 - 1) + (n_2 - 1) = tt"46"`
+				</div>
+			</p>
+			
 		</div>
 	</div>
 </div>
