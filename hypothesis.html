@@ -11,6 +11,8 @@ layout: default
 				`H_o = tt"NULL Hypothesis"`<br>
 				`mu_i = tt"Mean for incongruent scores"`<br>
 				`mu_c = tt"Mean for congruent scores"`<br>
+				`x_D = tt"Desired difference between both the mean"`<br>
+				`t_(stat) = tt"t-statistics for the sample"`<br>
 			</div></h3>
 			<p>
 				<h3><span id="green" class="wow zoomIn delay"> NULL Hypothesis</span></h3>
@@ -55,10 +57,20 @@ layout: default
 			<!--#####################-->
 			<p>
 				<h3><span id="green" class="tab-up wow zoomIn delay">
-					t-statistics value for the sample
+					Standard Error
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`SE = sqrt(mu_i^2/n_1 + mu_c^2/n_2)`
+				</div>
+			</p>
+			<!--#####################-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					t-statistics for the sample
 				</span></h3>
 				<div class="tab wow bounceInRight">
 					`t_(stat) = ((mu_i - mu_c) - x_D) / (SE) = tt"1.2"`
+						`iff x_D = 0`
 				</div>
 			</p>
 			<br><br>

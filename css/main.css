@@ -139,3 +139,10 @@ em {
 .tab-up {
 	margin-top: 30px;
 }
+.space {
+	margin-left: 12px;
+}
+.btn a {
+	text-decoration: none;
+	color: inherit;
+}
