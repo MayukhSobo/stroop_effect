@@ -6,23 +6,51 @@ layout: default
 	<div class="row">
 		<div class="col">
 			<h1> Hypothesis!! </h1>
+			<h3><div class="wow zoomIn legend">
+				`mu_a = tt"Mean for Alternative Hypothesis"`<br>
+				`mu_o = tt"Mean for NULL Hypothesis"`<br>
+				`mu_i = tt"Mean for incongruent scores"`<br>
+				`mu_c = tt"Mean for congruent scores"`<br>
+			</div></h3>
 			<br><br>
 			<p>
-				<span id="red"> NULL Hypothesis</span>
-				<div class="tab">
+				<h3><span id="red" class="wow zoomIn delay"> NULL Hypothesis</span></h3>
+				<div class="tab wow bounceInRight">
 					`mu_o -> mu_i - mu_c = 0 -> tt"There is no"` 
 					`tt"difference between"` 
 					`tt"both the means"`
 				</div>
 			</p>
 			<p>
-				<span id="red"> ALTERNATIVE Hypothesis </span>
-				<div class="tab">
+				<h3><span id="red" class="wow zoomIn delay"> ALTERNATIVE Hypothesis </span></h3>
+				<div class="tab wow bounceInRight">
 					`mu_a -> mu_i - mu_c ne 0 ->` 
 					`tt"There is significant"`
 					`tt"difference between"` 
 					`tt"both the means for"`
 					`tt"2 tailed t-test"`
+					<br><br>
+					`mu_a -> mu_i - mu_c lt 0 ->` 
+					`tt"Incongruent score"`
+					`tt"mean is lesser"` 
+					`tt"than the congruent"`
+					`tt"mean in 1"`
+					`tt"tailed t-test"`
+					<br>
+					`mu_a -> mu_i - mu_c gt 0 ->` 
+					`tt"Incongruent score"`
+					`tt"mean is greater"` 
+					`tt"than the congruent"`
+					`tt"mean in 1"`
+					`tt"tailed t-test"`
+				</div>
+			</p>
+			<p>
+				<h3><span id="red" class="tab-up wow zoomIn delay">
+					`t` Statictics at `alpha` value of 0.05
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`t_(alpha = 0.05) = tt"12.4"`
 				</div>
 			</p>
 		</div>

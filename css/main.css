@@ -66,6 +66,13 @@ p {
 	text-align: center;
 }
 
+h3 {
+	font-family: 'Nixie One', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 1.2rem;
+}
+
 .col p {
 	font-family: 'Neuton';
 	font-size: 20px;
@@ -122,7 +129,13 @@ em {
 	font-family: 'EB Garamond', serif;
 	text-align: justify;
 }
+.delay {
+	animation-delay: 1s;
+}
 .tab {
 	margin-top: -15px;
 	margin-left: 30px;
+}
+.tab-up {
+	margin-top: 30px;
 }
