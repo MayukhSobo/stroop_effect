@@ -6,14 +6,17 @@ layout: default
 	<div class="row">
 		<div class="col">
 			<h1> Hypothesis!! </h1>
+			<!--########### Legends ##########-->
 			<h3><div class="wow zoomIn legend">
 				`H_a = tt"Alternative Hypothesis"`<br>
 				`H_o = tt"NULL Hypothesis"`<br>
-				`mu_i = tt"Mean for incongruent scores"`<br>
-				`mu_c = tt"Mean for congruent scores"`<br>
-				`x_D = tt"Desired difference between both the mean"`<br>
+				`bar x_i = tt"Mean for incongruent scores"`<br>
+				`bar x_c = tt"Mean for congruent scores"`<br>
+				`bar x_d = tt"Point Estimate"`<br>
 				`t_(stat) = tt"t-statistics for the sample"`<br>
+				`delta = tt"The desired difference between both means"`
 			</div></h3>
+			<!--######### Hypothesis statements ############-->
 			<p>
 				<h3><span id="green" class="wow zoomIn delay"> NULL Hypothesis</span></h3>
 				<div class="tab wow bounceInRight">
@@ -25,64 +28,103 @@ layout: default
 			<p>
 				<h3><span id="green" class="wow zoomIn delay"> ALTERNATIVE Hypothesis </span></h3>
 				<div class="tab wow bounceInRight">
-					`H_a: mu_i - mu_c ne 0 ->` 
-					`tt"There is significant"`
-					`tt"difference between"` 
-					`tt"both the means for"`
-					`tt"2 tailed t-test"`
-					<br><br>
-					`H_a: mu_i - mu_c lt 0 ->` 
-					`tt"Incongruent score"`
+					`H_a: mu_c - mu_i lt 0 ->` 
+					`tt"Congruent score"`
 					`tt"mean is lesser"` 
-					`tt"than the congruent"`
+					`tt"than the incongruent"`
 					`tt"mean in 1"`
 					`tt"tailed t-test"`
 					<br>
-					`H_a: mu_i - mu_c gt 0 ->` 
-					`tt"Incongruent score"`
-					`tt"mean is greater"` 
-					`tt"than the congruent"`
-					`tt"mean in 1"`
-					`tt"tailed t-test"`
 				</div>
 			</p>
-			<p>
-				<h3><span id="green" class="tab-up wow zoomIn delay">
-					`t` Statictics at `alpha` value of 0.05
-				</span></h3>
-				<div class="tab wow bounceInRight">
-					`t_(alpha = 0.05) = tt"12.4"`
-				</div>
-			</p>
-			<!--#####################-->
-			<p>
-				<h3><span id="green" class="tab-up wow zoomIn delay">
-					Standard Error
-				</span></h3>
-				<div class="tab wow bounceInRight">
-					`SE = sqrt(mu_i^2/n_1 + mu_c^2/n_2)`
-				</div>
-			</p>
-			<!--#####################-->
-			<p>
-				<h3><span id="green" class="tab-up wow zoomIn delay">
-					t-statistics for the sample
-				</span></h3>
-				<div class="tab wow bounceInRight">
-					`t_(stat) = ((mu_i - mu_c) - x_D) / (SE) = tt"1.2"`
-						`iff x_D = 0`
-				</div>
-			</p>
-			<br><br>
-			<!--#####################-->
+			<!--########## dogrees of freedom ###########-->
 			<p>
 				<h3><span id="green" class="tab-up wow zoomIn delay">
 					Total degress of freedom
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`df = (n_1 - 1) + (n_2 - 1) = tt"46"`
+					`df = (n - 1) = tt"23"`
+					`if n = tt"Sample Size"`
 				</div>
 			</p>
+			<!--########## t statistics for alpha = 0.05 and df = 23 ###########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					One tailed `t` value at `alpha` of 0.05
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`t_(alpha = 0.05) = +-tt"1.714"`
+				</div>
+			</p>
+			<!--- ######## Standard Deviation of the Difference  -->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Standard Deviation of the difference
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`S = sqrt(sum_0^(n-1) (d_i - bar (md))^2 / (n -1))	= tt"1.8726"`<br>
+					`iff bar (md) = sum_0^(n-1) (x_i - y_i) / n`
+					`tt"= -7.9647"`
+				</div>
+			</p>
+			<!--########## Point of estimate ########### -->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Point of Estimate
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`bar x_d = bar x_c - bar x_i = bar (md) = tt"-7.9647"`
+				</div>
+			</p>
+			<!--########## Standard Error ###########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Standard Error
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`SE = S / sqrt(n) = tt"0.3823"`
+				</div>
+			</p>
+			<!--########### t statistics for the sample ##########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					t-statistics for the sample
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`t_(stat) = ((bar x_c - bar x_i) - delta) / (SE) =tt"-20.8365"`
+						`iff delta = 0`
+				</div>
+			</p>
+			<!--########### Cohen's d for effect size ##########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Cohen's d for effect size
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`d = (bar x_c - bar x_i)/S = tt"4.2532"`
+				</div>
+			</p>
+			<!--########### 95% confidence interval ##########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					95% Cofidence Interval
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`CI = bar x_d +- t_(aplha = 0.05) xx SE`
+					` => CI in tt"[-8.62, -7.31]"`
+				</div>
+			</p>
+			<!--########### r^2 value ##########-->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Coefficient of Determination `r^2`
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					`r^2 = t_(stat)^2 / (t_(stat)^2 + df) = tt"0.9497"`
+					`~=tt"95%"`
+				</div>
+			</p>
+			<br><br>
 			
 		</div>
 	</div>
