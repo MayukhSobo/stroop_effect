@@ -146,3 +146,6 @@ em {
 	text-decoration: none;
 	color: inherit;
 }
+.side {
+	margin-left: 12px;
+}
