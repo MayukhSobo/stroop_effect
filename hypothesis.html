@@ -101,7 +101,7 @@ layout: default
 					Cohen's d for effect size
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`d = (bar x_c - bar x_i)/S = tt"4.2532"`
+					`d = (bar x_c - bar x_i)/S = tt"-4.2532"`
 				</div>
 			</p>
 			<!--########### 95% confidence interval ##########-->
@@ -124,8 +124,28 @@ layout: default
 					`~=tt"95%"`
 				</div>
 			</p>
-			<br><br>
-			
+			<!-- Hypothesis Decision -->
+			<p>
+				<h3><span id="green" class="tab-up wow zoomIn delay">
+					Decision on the Hypothesis
+				</span></h3>
+				<div class="tab wow bounceInRight">
+					<p> As the `|t_(alpha=0.05)| < |t_(stat)|` we reject the `H_o` in favour of the `H_a`. </p>
+				</div>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p>
+				<h3><span id="green" class="wow zoomIn"> Inference  </span></h3>
+				<div class="wow zoomIn"> <p>
+					As we have rejected the `H_o` in favour of `H_a` and this is a controlled experiment, we can say the <em> incogrunet words does affect the reading time of the words as compared to the congruent words</em> beause of stroop effect and this statistically siginificant event. This is natural too because the t-score of `tt"-21"` is way more than the aplha value and hence the probability is way less for getting the difference of mean to be zero.
+				</p> </div><br>
+				<div class="wow zoomIn"> <p>
+					Consequently, as we have predicted in the scatter plot that most of the points are located along the regression axis and this would result in a very high value of `r^2`. We get the `r^2` to be almost `95%` which means that `95%` of the variation of the time in the incongruent score from the congruent score is actually because the words were changed to incongruent. The rest `5%` corresponds to some other factor namely lurking variables. This further proves the fact that if samples are taken without any bias or in other words randomly, the increase in time is mostly because of word type is changed from congruent to incongruent. Moreover the Cohen's d of negative 4 shows that there is a decerese in time and it is quite large. This is also relevant because the congrent time is supposed to be lesser than the incongruent time.
+				</p>
+			</p>
 		</div>
 	</div>
 </div>
