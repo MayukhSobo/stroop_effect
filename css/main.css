@@ -138,7 +138,11 @@ em {
 	margin-top: -15px;
 	margin-left: 30px;
 }
-
+a {
+	color: teal;
+	font-weight: bolder;
+	font-family: 'Arbutus Slab', serif;
+}
 .tab-up {
 	margin-top: 30px;
 }
