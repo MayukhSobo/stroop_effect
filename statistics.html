@@ -65,10 +65,33 @@ layout: default
 	  
 	  <div class="col-lg-4">
 	    <h2> <div class="wow zoomIn"> Mode </div> </h2>
-	    <p class="congruent wow bounceInRight"> 14.3565 </p>
-	    <p class="incongruent wow bounceInRight"> 21.0175 </p>
+	    <p class="congruent wow bounceInRight"> 10 to 15 (45.8%)</p>
+	    <p class="incongruent wow bounceInRight"> 20 to 25 (50%) </p>
 	  </div>
 	</div>
 	<br><br>
 	<!---############ Extras ############# -->
+	<div class="row">
+		<div class="col">
+			 <h2><div class="wow zoomIn"> Variability </div></h2>
+			 <div class="wow zoomIn"> <p>
+        		As we can see in the above picture, the mean and the median is almost same for both the congruent and the incongruent scores but they are not equal. This tells that firstly, the distribution is not perfectly normal otherwise these values would have been same for both. Secondly, there are not much outliers but still there are few. That's why we have got the differnce between the mean and median to very small but not zero. <br>
+				
+				There are different ways to clean the outliers in the samples but here we would report the Inter Quartile Range or IQR. Cleaning of outliers is important because we need to spot that how much our distribution is spread out. Outliers are targated using the statistic below <br><br>
+
+				<span class="tab">`tt"Outliers " < Q_1 - 1.5 xx (IQR)` <br> `tt"               or,"`<br> `tt"           "> Q_3 + 1.5 xx (IQR)`<br></span>
+
+        		</p>
+        		<span id="orange"><h2><div class="wow zoomIn">| `Q_1 = tt"11.71"` | `Q_3 = tt"16.39"` | `IQR = tt"4.68"` |</div></h2></span><br>
+        		<span id="green"><h2><div class="wow zoomIn">| `Q_1 = tt"18.69"` | `Q_3 = tt"24.20"` | `IQR = tt"5.51"` |</div></h2></span><br><br>
+
+        		<span id="orange"><h3><div class="wow zoomIn center">`tt"Outliers: [None]"`</div></h3></span>
+        		<span id="green"><h3><div class="wow zoomIn center">`tt"Outliers:[34.288, 35.255]"`</div></h3></span><br>
+        		<p>
+        			As it is quiet event that there are only 2 outliers in the incongruent sample however no outliers in the congruent one. This would be more evident in the regression plot in the visualisation section. Hence we can say that the variability in the congruent graph is less as compared to the incongruent graph. This would mean that the standard deviation of the congruent data is less as compared to the incongruent data. Here are the values of their respective standard deviations.
+        		</p>
+        	</div>
+		</div>
+	</div>
+	<br><br>
 </div>
