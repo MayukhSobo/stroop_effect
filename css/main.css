@@ -58,7 +58,9 @@ p {
 	color: blue;
 	text-align: center;
 }
-
+.center {
+	text-align: center;
+}
 .col h2 {
 	font-family: 'Nixie One', cursive;
 	font-size: 30px;
@@ -136,6 +138,7 @@ em {
 	margin-top: -15px;
 	margin-left: 30px;
 }
+
 .tab-up {
 	margin-top: 30px;
 }
