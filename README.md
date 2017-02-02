@@ -6,6 +6,7 @@
 # How to run the project ?
 #### First
 - Browse the GitHub hosted website from [HERE](https://mayukhsobo.github.io/stroop_effect/)
+
 #### then, 
 
 - Install Ruby on your system
@@ -14,7 +15,7 @@
 	- kramdown
 ```sh
   gem install jekyll
-  gem install redcarpet
+  gem install kramdown
 ```
 - And the run the server using the following command in your Terminal
 ```sh
