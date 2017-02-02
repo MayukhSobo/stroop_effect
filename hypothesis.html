@@ -22,7 +22,12 @@ layout: default
 				<div class="tab wow bounceInRight">
 					`H_o: mu_i - mu_c = 0 -> tt"There is no"` 
 					`tt"difference between"` 
-					`tt"both the means"`
+					`tt"both the means"`<br><br>
+					`tt"here, "`<br>
+					 `mu_c =`
+					`tt"Mean of the congruent score of population"`<br>
+					`mu_i =`
+					`tt"Mean of the incongruent score of population"`
 				</div>
 			</p>
 			<p>
@@ -33,7 +38,12 @@ layout: default
 					`tt"mean is lesser"` 
 					`tt"than the incongruent"`
 					`tt"mean in 1"`
-					`tt"tailed t-test"`
+					`tt"tailed t-test"`<br><br>
+					`tt"here, "`<br>
+					 `mu_c =`
+					`tt"Mean of the congruent score of population"`<br>
+					`mu_i =`
+					`tt"Mean of the incongruent score of population"`
 					<br>
 				</div>
 			</p>
@@ -62,7 +72,7 @@ layout: default
 					Standard Deviation of the difference
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`S = sqrt(sum_0^(n-1) (d_i - bar (md))^2 / (n -1))	= tt"1.8726"`<br>
+					`S = sqrt(sum_0^(n-1) (d_i - bar (md))^2 / (n -1))	= tt"4.8648"`<br>
 					`iff bar (md) = sum_0^(n-1) (x_i - y_i) / n`
 					`tt"= -7.9647"`
 				</div>
@@ -82,7 +92,7 @@ layout: default
 					Standard Error
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`SE = S / sqrt(n) = tt"0.3823"`
+					`SE = S / sqrt(n) = tt"0.9930"`
 				</div>
 			</p>
 			<!--########### t statistics for the sample ##########-->
@@ -91,7 +101,7 @@ layout: default
 					t-statistics for the sample
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`t_(stat) = ((bar x_c - bar x_i) - delta) / (SE) =tt"-20.8365"`
+					`t_(stat) = ((bar x_c - bar x_i) - delta) / (SE) =tt"-8.0207"`
 						`iff delta = 0`
 				</div>
 			</p>
@@ -101,7 +111,7 @@ layout: default
 					Cohen's d for effect size
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`d = (bar x_c - bar x_i)/S = tt"-4.2532"`
+					`d = (bar x_c - bar x_i)/S = tt"-1.6372"`
 				</div>
 			</p>
 			<!--########### 95% confidence interval ##########-->
@@ -111,7 +121,7 @@ layout: default
 				</span></h3>
 				<div class="tab wow bounceInRight">
 					`CI = bar x_d +-` `t_(alpha = 0.05)` `xx SE`
-					` => CI in tt"[-8.62, -7.31]"`
+					` => CI in tt"[-9.666, -6.262]"`
 				</div>
 			</p>
 			<!--########### r^2 value ##########-->
@@ -120,8 +130,8 @@ layout: default
 					Coefficient of Determination `r^2`
 				</span></h3>
 				<div class="tab wow bounceInRight">
-					`r^2 = t_(stat)^2 / (t_(stat)^2 + df) = tt"0.9497"`
-					`~=tt"95%"`
+					`r^2 = t_(stat)^2 / (t_(stat)^2 + df) = tt"0.736"`
+					`~=tt"74%"`
 				</div>
 			</p>
 			<!-- Hypothesis Decision -->
@@ -143,10 +153,10 @@ layout: default
 					As we have rejected the `H_o` in favour of `H_a` and this is a controlled experiment, we can say the <em> incogrunet words does affect the reading time of the words as compared to the congruent words</em> beause of stroop effect and this statistically siginificant event. This is natural too because the t-score of `tt"-21"` is way more than the aplha value and hence the probability is way less for getting the difference of mean to be zero.
 				</p> </div><br>
 				<div class="wow zoomIn"> <p>
-					Consequently, as we have predicted in the scatter plot that most of the points are located along the regression axis and this would result in a very high value of `r^2`. We get the `r^2` to be almost `95%` which means that `95%` of the variation of the time in the incongruent score from the congruent score is actually because the words were changed to incongruent. The rest `5%` corresponds to some other factor namely lurking variables. This further proves the fact that if samples are taken without any bias or in other words randomly, the increase in time is mostly because of word type is changed from congruent to incongruent. Moreover the Cohen's d of negative 4 shows that there is a decerese in time and it is quite large. This is also relevant because the congrent time is supposed to be lesser than the incongruent time.</p>
+					Consequently, as we have predicted in the scatter plot that most of the points are located along the regression axis and this would result in a very high value of `r^2`. We get the `r^2` to be almost `74%` which means that `74%` of the variation of the time in the incongruent score from the congruent score is actually because the words were changed to incongruent. The rest `26%` corresponds to some other factor namely lurking variables. This further proves the fact that if samples are taken without any bias or in other words randomly, the increase in time is mostly because of word type is changed from congruent to incongruent. Moreover the Cohen's d of negative 4 shows that there is a decerese in time and it is quite large. This is also relevant because the congrent time is supposed to be lesser than the incongruent time.</p>
 				</div><br>
 
-				<div class="wow zoomIn"><p> Another important factor is the confidence interval or CI. The confidence interval has always been a parameter for population metric capture. In other words, when we only have the samples but not the population parameter, we have to rely on the CI to make an assumption for the CI meteric if the experiment is performed on the population. Here the CI metric is the difference between `bar x_c - bar x_i` or the difference in the time between congruent and incongruent words. We saw that the value is `tt"[-8.62, -7.31]"`. <em>Hence it means that if we implement the same experiment on the population, then on average people would take almost `tt"7.31 sec to 8.62 sec"` less time in reading the congruent words as compared to incongruent words.</em></p>
+				<div class="wow zoomIn"><p> Another important factor is the confidence interval or CI. The confidence interval has always been a parameter for population metric capture. In other words, when we only have the samples but not the population parameter, we have to rely on the CI to make an assumption for the CI meteric if the experiment is performed on the population. Here the CI metric is the difference between `bar x_c - bar x_i` or the difference in the time between congruent and incongruent words. We saw that the value is `tt"[-9.666, -6.262]"`. <em>Hence it means that if we implement the same experiment on the population, then on average people would take almost `tt"6.2 sec to 9.6 sec"` less time in reading the congruent words as compared to incongruent words.</em></p>
 				</div>
 			</p>
 		</div>
