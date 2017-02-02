@@ -58,6 +58,11 @@ p {
 	color: blue;
 	text-align: center;
 }
+.just {
+	text-align: justify;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+}
 .center {
 	text-align: center;
 }
